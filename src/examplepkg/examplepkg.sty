@@ -1,0 +1,19 @@
+\ProvidesPackage{examplepkg}[2025-02-13]% chktex 8
+\NeedsTeXFormat{LaTeX2e}[2024-06-01]% chktex 8
+
+% region options -----------------------------------------------------------------------
+\DeclareKeys[examplepkg]{
+	bazinga.if = @examplepkg@bazinga,
+}
+\SetKeys[examplepkg]{}
+\ProcessKeyOptions[examplepkg]
+% endregion options --------------------------------------------------------------------
+
+
+\NewDocumentCommand{\HelloWorld}{}{%
+	\if@examplepkg@bazinga%
+		Bazinga!%
+	\else%
+		Hello, World!%
+	\fi%
+}

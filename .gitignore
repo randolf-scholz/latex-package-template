@@ -1,3 +1,14 @@
+# region custom gitignore settings -----------------------------------------------------
+# ignore all hidden folders, except specific ones
+.*/
+!.idea/
+!.vscode/
+
+# test results
+**/tests/**/*.pdf
+# endregion custom gitignore settings --------------------------------------------------
+
+# region latex gitignore template ------------------------------------------------------
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
@@ -305,3 +316,4 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+# endregion latex gitignore template ---------------------------------------------------
